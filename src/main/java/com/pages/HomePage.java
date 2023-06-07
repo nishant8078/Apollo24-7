@@ -24,7 +24,7 @@ public class HomePage extends Utility
 	WebElement printing_Details;   
 
     // THIS IS THE PATH FOR NAVIGATING ON MY ORDERS PAGE
-	@FindBy(xpath="//*[@href=\"/orders\"]")
+	@FindBy(xpath="//*[@href='/orders']")
 	WebElement myorders;   
 	
     // THIS IS THE PATH FOR THE HOME PAGE BUTTON ON THE MY ORDERS PAGE 

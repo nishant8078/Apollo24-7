@@ -71,13 +71,13 @@ public void user_clicks_on_login_button() throws IOException {
 	Utility.implicitWait();
 	logger.log(Status.INFO, "Step 3 is executed");
 }
-@Then("User enters mobile number")
-public void user_enters_mobile_number() throws Exception {
-	objectMethod();
-	lp.mobilelogin();
-	Utility.implicitWait();
-	ut.captureScreenshot();
-	logger.log(Status.INFO, "Step 4 is executed");
+@Then("User enters valid {string} mobile number")
+public void User_enters_valid_mobile_number(String validmobilenumber) throws Exception {
+  objectMethod();
+  lp.validmobilelogin(validmobilenumber);
+  Utility.implicitWait();
+  lp.login_click(); 
+  logger.log(Status.INFO, "Step 4 is executed");
 }
 @When("User click on arrow button")
 public void user_click_on_arrow_button() throws IOException {

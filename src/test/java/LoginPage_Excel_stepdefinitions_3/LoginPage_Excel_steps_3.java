@@ -90,30 +90,21 @@ public class LoginPage_Excel_steps_3 extends Utility{
       List<Map<String,String>> testData = reader.getData(Config.excelPath, SheetName);
       String Mobile = testData.get(RowNumber).get("contact");
       lp.Parameterizedmobilelogin(Mobile);
-      lp.mobilelogin();
-      Utility.implicitWait();
-	  lp.login_click(); 
+      Thread.sleep(1000);
+      lp.mobileError();
+	  ut.captureScreenshot();
 	  logger.log(Status.INFO, "Step4 is executed");
 	}
 	
-	@When("User enters invalid OTP")
-	public void user_enters_invalid_OTP() throws Exception {
-		objectMethod();
-		Thread.sleep(7000);
-		lp.afterotp_button();
-		Utility.implicitWait();
-		logger.log(Status.INFO, "Step5 is executed");
-		
-	}
 	
-	
-	@Then("User should get the error text on console")
-	public void user_should_get_the_error_text_on_console() throws Exception {
+	@Then("User should get the invalid mobile error text on console")
+	public void User_should_get_the_invalid_mobile_error_text_on_console() throws Exception {
 		objectMethod();
-		lp.otpError();
+		lp.mobileError();
 		ut.captureScreenshot();
-		logger.log(Status.INFO, "Step6 is executed");
+		logger.log(Status.INFO, "Step 5 is executed");
 	}
+	
 	
 	
 

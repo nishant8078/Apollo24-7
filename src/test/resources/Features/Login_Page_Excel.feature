@@ -8,8 +8,7 @@ Scenario Outline: Check login is unsuccessfull with invalid credentials
     Then Fields on navigation page are visible to the user
     Then User clicks on login button
     Then User enters contact number from sheet name "<SheetName>" and row number <RowNumber>
-    When User enters invalid OTP
-    Then User should get the error text on console
+    Then User should get the invalid mobile error text on console
    
    Examples:
    | SheetName  | RowNumber |

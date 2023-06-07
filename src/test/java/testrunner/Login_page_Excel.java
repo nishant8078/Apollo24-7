@@ -7,9 +7,9 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 		features = {"src/test/resources/features/Login_Page_Excel.feature"},
 		glue = {"LoginPage_Excel_stepdefinitions_3", "apphooks"},
 				 plugin= {"pretty" ,
-						 "html:target/creport/Negativecucumber.html",
-						 "json:target/creport/Negativecucumber.json",
-				 		 "junit:target/creport/Negativecucumber.xml"}
+						 "html:target/creport/Excelcucumber.html",
+						 "json:target/creport/Excelcucumber.json",
+				 		 "junit:target/creport/Excelcucumber.xml"}
 		)
 public class Login_page_Excel extends AbstractTestNGCucumberTests{
 

@@ -68,7 +68,7 @@ public class LoginPageSteps_2 extends Utility{
 		System.out.println("ELEMENT IS ENABLED - ASSERT PASSED");
 		ut.captureScreenshot();
 		Utility.implicitWait();
-		logger.log(Status.INFO, "Step2 is executed");
+		logger.log(Status.INFO, "Step 2 is executed");
 	}
 	
 	@Then("User clicks on login button")
@@ -78,39 +78,74 @@ public class LoginPageSteps_2 extends Utility{
 		Utility.implicitWait();
 		ldp.loginbutton_open();
 		Utility.implicitWait(); 
-		logger.log(Status.INFO, "Step3 is executed");
+		logger.log(Status.INFO, "Step 3 is executed");
 	}
 	
 	@Then("User enters invalid {string} mobile number")
 	public void user_enters_invalid_mobile_number(String string) throws Exception {
 	  objectMethod();
 	  lp.Parameterizedmobilelogin(string);
-	  Utility.implicitWait();
-	  lp.mobilelogin();
+	  logger.log(Status.INFO, "Step 4 is executed");
+	}
+	
+
+	@Then("User should get the invalid mobile error text on console")
+	public void User_should_get_the_invalid_mobile_error_text_on_console() throws Exception {
+		objectMethod();
+		lp.mobileError();
+		ut.captureScreenshot();
+		logger.log(Status.INFO, "Step 5 is executed");
+	}
+	
+	
+	
+	@Then("User enters valid {string} mobile number")
+	public void User_enters_valid_mobile_number(String validmobilenumber) throws Exception {
+	  objectMethod();
+	  lp.validmobilelogin(validmobilenumber);
 	  Utility.implicitWait();
 	  lp.login_click(); 
-	  logger.log(Status.INFO, "Step4 is executed");
+	  logger.log(Status.INFO, "Step 6 is executed");
 	}
 	
+	@When("User click on arrow button")
+	public void user_click_on_arrow_button() throws IOException {
+		objectMethod();
+		Utility.implicitWait();
+		lp.login_click();
+		Utility.implicitWait();
+		logger.log(Status.INFO, "Step 7 is executed");
+	}
 	
 	@When("User enters invalid OTP")
-	public void user_enters_invalid_OTP() throws Exception {
+	public void User_enters_invalid_OTP() throws Exception {
 		objectMethod();
-		Thread.sleep(7000);
+		Thread.sleep(1500);
 		lp.afterotp_button();
 		Utility.implicitWait();
-		logger.log(Status.INFO, "Step5 is executed");
-		
+		Utility.implicitWait();
+		logger.log(Status.INFO, "Step 8 is executed");
 	}
 	
 	
-	@Then("User should get the error text on console")
-	public void user_should_get_the_error_text_on_console() throws Exception {
+
+	@Then("User should get the invalid OTP error text on console")
+	public void user_should_get_the_invalid_OTP_error_text_on_console() throws Exception {
 		objectMethod();
 		lp.otpError();
 		ut.captureScreenshot();
-		logger.log(Status.INFO, "Step6 is executed");
+		logger.log(Status.INFO, "Step 9 is executed");
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 
 }

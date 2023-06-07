@@ -36,6 +36,10 @@ public class LoginPage extends Utility
 	@FindBy(xpath="//div[@class='MuiFormHelperText-root jss83 Mui-error']")
 	WebElement otpError;
 	
+//	THIS IS THE PATH OF ERROR OF MOBILE FOR FEATURE FILE 2 
+	@FindBy(xpath="//*[text()='This seems like a wrong number']")
+	WebElement mobileError;
+	
 
 	
 	public LoginPage() throws IOException
@@ -49,8 +53,8 @@ public class LoginPage extends Utility
 		return driver.getTitle(); 
 	} 
 	
-	public void mobilelogin() {
-		Login_mobile.sendKeys("8078632273");
+	public void validmobilelogin(String validmobilelogin) {
+		Login_mobile.sendKeys(validmobilelogin);
 		//THIS FUNCTION WILL SEND MOBILE NUMBER IN THE PHONE NUMBER TEXT BOX
 	}
 	
@@ -70,11 +74,7 @@ public class LoginPage extends Utility
 	public void Parameterizedmobilelogin(String string) throws Exception {
 		Login_mobile.sendKeys(string);
 //		THIS IS THE PARAMETERIZED FUNCTION FOR SENDING WRONG NUMBER
-		String s = Keys.chord(Keys.CONTROL, "a");
-		Thread.sleep(3000);
-		captureScreenshot();
-	    Login_mobile.sendKeys(s);
-	    Login_mobile.sendKeys(Keys.DELETE);
+		
 	    	
 	}
 	
@@ -85,4 +85,8 @@ public class LoginPage extends Utility
 //		THIS FUNCTION WILL PRINT THE ERROR OF WRONG OTP	
 	} 
     	
+    public void mobileError() {
+	    System.out.print(mobileError.getText());
+//		THIS FUNCTION WILL PRINT THE ERROR OF WRONG MOBILE	
+	} 
 }
