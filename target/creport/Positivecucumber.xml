@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="41.73" tests="3" skipped="0" failures="0" errors="0">
+<testcase classname="To check login functionality" name="UI" time="6.635">
+<system-out><![CDATA[
+Given Chrome is opened and apollo247 app is opened..........................passed
+When User navigate on landing page..........................................passed
+Then Fields on navigation page are visible to the user......................passed
+]]></system-out>
+</testcase>
+<testcase classname="To check login functionality" name="Landing Page" time="4.775">
+<system-out><![CDATA[
+Given Chrome is opened and apollo247 app is opened..........................passed
+When User navigate on landing page..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To check login functionality" name="Check login is successfull with valid credentials" time="30.055">
+<system-out><![CDATA[
+Given Chrome is opened and apollo247 app is opened..........................passed
+When User navigate on landing page..........................................passed
+Then Fields on navigation page are visible to the user......................passed
+When User clicks on login button............................................passed
+Then User enters mobile number..............................................passed
+When User click on arrow button.............................................passed
+And After entering OTP click on arrow button................................passed
+Then Users details are printed on the console...............................passed
+Then User will click on orders button for navigating on my orders page......passed
+Then User will go back to home page.........................................passed
+]]></system-out>
+</testcase>
+</testsuite>

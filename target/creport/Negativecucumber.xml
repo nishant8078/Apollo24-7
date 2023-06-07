@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="25.24" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="To check invalid login functionality" name="Check login is unsuccessfull with invalid credentials" time="24.999">
+<system-out><![CDATA[
+Given Chrome is opened and apollo247 app is opened..........................passed
+When User navigate on landing page..........................................passed
+Then Fields on navigation page are visible to the user......................passed
+Then User clicks on login button............................................passed
+Then User enters invalid "0000000000" mobile number.........................passed
+When User enters invalid OTP................................................passed
+Then User should get the error text on console..............................passed
+]]></system-out>
+</testcase>
+</testsuite>
