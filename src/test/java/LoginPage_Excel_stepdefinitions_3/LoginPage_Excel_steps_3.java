@@ -105,7 +105,5 @@ public class LoginPage_Excel_steps_3 extends Utility{
 		logger.log(Status.INFO, "Step 5 is executed");
 	}
 	
-	
-	
 
 }

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="29.861" tests="2" skipped="0" failures="0" errors="0">
+<testcase classname="To check invalid login functionality" name="Check login is unsuccessfull with invalid mobilenumber - Example #1.1" time="13.9">
+<system-out><![CDATA[
+Given Chrome is opened and apollo247 app is opened..........................passed
+When User navigate on landing page..........................................passed
+Then Fields on navigation page are visible to the user......................passed
+When User clicks on login button............................................passed
+Then User enters invalid "0000000000" mobile number.........................passed
+Then User should get the invalid mobile error text on console...............passed
+]]></system-out>
+</testcase>
+<testcase classname="To check invalid login functionality" name="Check login is unsuccessfull with invalid otp - Example #1.1" time="15.639">
+<system-out><![CDATA[
+Given Chrome is opened and apollo247 app is opened..........................passed
+When User navigate on landing page..........................................passed
+Then Fields on navigation page are visible to the user......................passed
+When User clicks on login button............................................passed
+Then User enters valid "8078632273" mobile number...........................passed
+When User click on arrow button.............................................passed
+When User enters invalid OTP "000000".......................................passed
+Then User should get the invalid OTP error text on console..................passed
+]]></system-out>
+</testcase>
+</testsuite>

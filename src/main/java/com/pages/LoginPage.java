@@ -40,7 +40,9 @@ public class LoginPage extends Utility
 	@FindBy(xpath="//*[text()='This seems like a wrong number']")
 	WebElement mobileError;
 	
-
+//	THIS IS THE PATH OF OTP TEXT BOX FOR FEATURE FILE 2 
+	@FindBy(xpath="//input[@type='tel']")
+	WebElement enterinvalidOTP;
 	
 	public LoginPage() throws IOException
 	{
@@ -88,5 +90,11 @@ public class LoginPage extends Utility
     public void mobileError() {
 	    System.out.print(mobileError.getText());
 //		THIS FUNCTION WILL PRINT THE ERROR OF WRONG MOBILE	
+	}
+
+
+	public void enterOTP(String invalidOTP) {
+		// THIS FUNCTION WILL ENTER THE INVALID OTP FOR FEATURE FILE 2
+		enterinvalidOTP.sendKeys(invalidOTP);
 	} 
 }

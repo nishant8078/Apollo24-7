@@ -63,10 +63,12 @@ public void fields_on_navigation_page_are_visible_to_the_user() throws Exception
 	Utility.implicitWait();
 }
 @When("User clicks on login button")
-public void user_clicks_on_login_button() throws IOException {
+public void user_clicks_on_login_button() throws IOException, InterruptedException {
 	objectMethod();
-	ldp.cancelpopupbutton();
 	Utility.implicitWait();
+	Thread.sleep(3000);
+	ldp.cancelpopupbutton();
+	Thread.sleep(2000);
 	ldp.loginbutton_open();
 	Utility.implicitWait();
 	logger.log(Status.INFO, "Step 3 is executed");
@@ -106,7 +108,7 @@ public void users_details_are_printed_on_the_console() throws IOException {
 	hp.printingDetailsOfuser();
 	logger.log(Status.INFO, "Step 7 is executed");
 }
-@Then("User will click on orders button for navigating on my orders page")
+@When("User will click on orders button for navigating on my orders page")
 public void user_will_click_on_orders_button_for_navigating_on_my_orders_page() throws Exception {
 	objectMethod();
 	Utility.implicitWait();

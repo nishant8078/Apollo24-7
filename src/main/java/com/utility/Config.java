@@ -9,13 +9,10 @@ public class Config {
 	public static String chromeDriverPath = projectPath + "\\drivers\\chromedriver.exe";
 	public static String geckoDriverPath = projectPath + "\\drivers\\geckodriver.exe";
 	public static String screenshotsPath = projectPath + "\\screenshots\\";
+	public static String filePath = projectPath + "\\src\\main\\java\\com\\config\\Config.properties";
 	public static String excelPath = projectPath + "\\src\\main\\java\\com\\testdata\\testdata.xlsx";
 	public static long PAGE_LOAD_TIMEOUT = 30;
-	
 	public static long IMPLICIT_WAIT = 30;
-	
-	
-			
 	
 	
 }

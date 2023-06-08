@@ -19,7 +19,7 @@ Feature: To check login functionality
     When User click on arrow button
     And After entering OTP click on arrow button
     Then Users details are printed on the console
-    Then User will click on orders button for navigating on my orders page 
+    When User will click on orders button for navigating on my orders page 
     Then User will go back to home page 
     
  

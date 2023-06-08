@@ -71,9 +71,11 @@ public class LoginPageSteps_2 extends Utility{
 		logger.log(Status.INFO, "Step 2 is executed");
 	}
 	
-	@Then("User clicks on login button")
+	@When("User clicks on login button")
 	public void user_clicks_on_login_button() throws InterruptedException, IOException {
 		objectMethod();
+		Utility.implicitWait();
+		Thread.sleep(3000);
 		ldp.cancelpopupbutton();
 		Utility.implicitWait();
 		ldp.loginbutton_open();
@@ -117,9 +119,11 @@ public class LoginPageSteps_2 extends Utility{
 		logger.log(Status.INFO, "Step 7 is executed");
 	}
 	
-	@When("User enters invalid OTP")
-	public void User_enters_invalid_OTP() throws Exception {
+	@When("User enters invalid OTP {string}")
+	public void User_enters_invalid_OTP(String invalidOTP) throws Exception {
 		objectMethod();
+		Thread.sleep(1500);
+		lp.enterOTP(invalidOTP);
 		Thread.sleep(1500);
 		lp.afterotp_button();
 		Utility.implicitWait();

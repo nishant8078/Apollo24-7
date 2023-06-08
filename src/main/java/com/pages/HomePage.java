@@ -20,7 +20,7 @@ public class HomePage extends Utility
 	
 	
     // THIS IS THE PATH FOR PRINTING THE USERS DETAILS WHEN USER CLICKS ON LOGIN BUTTON THE USER DETAILS ARE SHOWN IN THE BOX 
-	@FindBy(xpath="//*[@class=\"Profile_userDetails__L9AzH\"]")
+	@FindBy(xpath="//*[@class='Profile_userDetails__L9AzH']")
 	WebElement printing_Details;   
 
     // THIS IS THE PATH FOR NAVIGATING ON MY ORDERS PAGE
@@ -28,7 +28,7 @@ public class HomePage extends Utility
 	WebElement myorders;   
 	
     // THIS IS THE PATH FOR THE HOME PAGE BUTTON ON THE MY ORDERS PAGE 
-	@FindBy(xpath="//*[@href=\"/\"]")//going back to home page after myorder
+	@FindBy(xpath="//*[@href='/']")//going back to home page after myorder
 	WebElement Home_back;
 	
 	
