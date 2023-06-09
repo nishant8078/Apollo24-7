@@ -1,76 +1,199 @@
+ReadMe file for cucumber framework with excel:
+
+ 
+
 --------------------------------------------------------------------------------------------------
+
 Project structure:
 
+ 
+
 src/main/java:
-	com.config:
-		Config.properties
-		
-	com.pages:
-		LandingPage.java
-		LoginPage.java
-		HomePage.java
-			
-	com.utility:
-		Config.java
-		ConfigReader.java
-		Utility.java
-		
+
+    com.config:
+
+        Config.properties
+
+ 
+
+    com.pages:
+
+        LandingPage.java
+
+        LoginPage.java
+
+        HomePage.java
+
+ 
+
+    com.testdata:
+
+        testdata.xlsx    
+
+ 
+
+    com.utility:
+
+        Config.java
+
+        ConfigReader.java
+
+        ExcelReader.java
+
+        Utility.java
+
+        ExtentReportManager.java
+
+ 
+
 src/test/java:
-	com.apphooks:
-		ApplicationHooks.java
-	
-	com.loginpage_stepdefinitions:
-		LoginPageSteps.java
-		
-	com.testrunner:
-		LoginPage_TestRunner.java	
-		
+
+    com.apphooks:
+
+        ApplicationHooks.java
+
+ 
+
+    com.loginpage_stepdefinitions:
+
+        LoginPageSteps.java
+
+ 
+
+    com.testrunner:
+
+        LoginPage_TestRunner.java    
+
+ 
+
 src/main/resources:
-	ReadMe
-						
+
+    ReadMe
+
+ 
+
 src/test/resources:
-	features folder
-		LoginPage.feature	
+
+    features folder
+
+        LoginPage.feature
+
+    testng.xml        
+
+ 
 
 drivers folder:
-	chromedriver.exe
-	
+
+    chromedriver.exe
+
+ 
+
 screenshots folder:
-	file.png	
-	
-pom.xml			
+
+    file.png    
+
+ 
+
+cucumber_report folder:
+
+    cucumber.html
+
+    cucumber.json
+
+    cucumber.xml
+
+ 
+
+extent_reports:
+
+    file.html
+
+ 
+
+pom.xml            
+
 --------------------------------------------------------------------------------------------------
+
 Project creation sequence:
 
+ 
+
 Create maven project
+
 Add the dependencies in pom.xml
+
 Maven project will have 4 sections by default(if not then create them):
-	src/main/java
-	src/main/resources
-	src/test/java
-	src/test/resources
+
+    src/main/java
+
+    src/main/resources
+
+    src/test/java
+
+    src/test/resources
+
+ 
 
 Create the required packages, classes, files in them as per below sequence:
 
+ 
+
 Step 1 --> Create Feature file
-Step 2 --> Create Config.java
-Step 3 --> Create Config.properties
-Step 4 --> Create ConfigReader.java
-Step 5 --> Create Utility.java
-Step 6 --> Create LandingPage.java
-Step 7 --> Create LoginPage.java
-Step 8 --> Create HomePage.java
-Step 9 --> Create ApplicationHooks.java
-Step 10 --> Create LandingPageSteps.java
-Step 11 --> Create LoginPageSteps.java
-Step 12 --> Create HomePageSteps.java
-Step 13 --> Create LandingPage_TestRunner.java
-Step 14 --> Create LoginPage_TestRunner.java
-Step 15 --> Create HomePage_TestRunner.java
+
+Step 2 --> Create testdata.xlsx
+
+Step 3 --> Create Config.java
+
+Step 4 --> Create Config.properties
+
+Step 5 --> Create ConfigReader.java
+
+Step 6 --> Create ExtentReportManager.java
+
+Step 7 --> Create Utility.java
+
+Step 8 --> Create ExcelReader.java
+
+Step 9 --> Create  LandingPage.java
+
+Step 10 --> Create LoginPage.java
+
+Step 11 --> Create HomePage.java
+
+Step 12 --> Create ApplicationHooks.java
+
+Step 13 --> Create LoginPage_stepdefinitions_1
+
+Step 14 --> Create LoginPage_stepdefinitions_2
+
+Step 15 --> Create LoginPage_Excel_stepdefinitions_3
+
+Step 16 --> Create LoginPage_testrunner.java
+
+Step 17 --> Create LoginPage_testrunner2.java
+
+Step 18 --> Create Login_page_Excel.java
+
+Step 19 --> Create testng.xml
+
+ 
+
+ 
 
 Create the drivers folder and keep driver in it
+
 Create the screenshots folder to keep screenshots in it
-Run the tests by using Test class(individual test class) or pom.xml
+
+Run the tests by using Test class(individual test class) or testng.xml(all test classes) or pom.xml
+
+ 
+
+ 
 
 See the reports in test-output folder(created by testng)
+
 See the reports in target folder(created by maven)
+
+See the reports in cucumber_report folder(created by cucumber)
+
+See the reports in extent_reports folder(created by extentreport)

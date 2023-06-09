@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="103.512" tests="3" skipped="0" failures="0" errors="0">
-<testcase classname="To check login functionality" name="UI" time="43.773">
+<testsuite name="Cucumber" time="48.684" tests="3" skipped="0" failures="0" errors="0">
+<testcase classname="To check login functionality" name="UI" time="9.02">
 <system-out><![CDATA[
 Given Chrome is opened and apollo247 app is opened..........................passed
 When User navigate on landing page..........................................passed
 Then Fields on navigation page are visible to the user......................passed
 ]]></system-out>
 </testcase>
-<testcase classname="To check login functionality" name="Landing Page" time="15.312">
+<testcase classname="To check login functionality" name="Landing Page" time="6.116">
 <system-out><![CDATA[
 Given Chrome is opened and apollo247 app is opened..........................passed
 When User navigate on landing page..........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="To check login functionality" name="Check login is successfull with valid credentials" time="44.13">
+<testcase classname="To check login functionality" name="Check login is successfull with valid credentials" time="33.217">
 <system-out><![CDATA[
 Given Chrome is opened and apollo247 app is opened..........................passed
 When User navigate on landing page..........................................passed

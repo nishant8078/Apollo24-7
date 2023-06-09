@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="14.731" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="To check invalid login functionality" name="Check login is unsuccessfull with invalid credentials - Example #1.1" time="14.708">
+<testsuite name="Cucumber" time="16.976" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="To check invalid login functionality" name="Check login is unsuccessfull with invalid credentials - Example #1.1" time="16.671">
 <system-out><![CDATA[
 Given Chrome is opened and apollo247 app is opened..........................passed
 When User navigate on landing page..........................................passed
