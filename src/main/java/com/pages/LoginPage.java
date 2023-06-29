@@ -50,10 +50,7 @@ public class LoginPage extends Utility
 	}
 	
 	
-	public String validateLoginPageTitle()
-	{
-		return driver.getTitle(); 
-	} 
+
 	
 	public void validmobilelogin(String validmobilelogin) {
 		Login_mobile.sendKeys(validmobilelogin);
@@ -97,4 +94,11 @@ public class LoginPage extends Utility
 		// THIS FUNCTION WILL ENTER THE INVALID OTP FOR FEATURE FILE 2
 		enterinvalidOTP.sendKeys(invalidOTP);
 	} 
+	
+	
+	
+//	public String validateLoginPageTitle()
+//	{
+//		return driver.getTitle(); 
+//	} 
 }

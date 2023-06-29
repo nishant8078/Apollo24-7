@@ -38,6 +38,7 @@ public class LandingPage extends Utility
 	public String validateLandinPageTitle()
 	{
 		return driver.getTitle(); 
+//		THIS FUNCTION WILL RETURN THE TITLE OF THE APOLLO247 WEBSITE
 	} 
 	
 	
